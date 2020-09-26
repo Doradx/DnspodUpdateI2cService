@@ -1,0 +1,13 @@
+[Unit]
+Description=Dnspod Update Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/python3 /etc/DnspodUpdate_I2C/run.py
+
+[Install]
+WantedBy=multi-user.target
