@@ -5,9 +5,10 @@ After=network.target
 [Service]
 Type=simple
 User=root
-Restart=on-failure
-RestartSec=5s
-ExecStart=/usr/bin/python3 /etc/DnspodUpdate_I2C/run.py
+WorkingDirectory=/etc/DnspodUpdate_I2C/
+Environment="PATH=/etc/DnspodUpdate_I2C/"
+ExecStart=python3 run.py
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
