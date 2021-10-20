@@ -10,9 +10,9 @@ import time
 from datetime import datetime
 import requests
 
-login_token = "183166,8c9a416a70a42e611df2cdd7679d27d1"
+login_token = "183166,xxxxxxxxxxxxxxxxx"
 domain = "cuger.cn"  # such as: xxx.cn
-record_id = '667533208'  # find at dnspod api according to your record: https://support.dnspod.cn/api/5f562ae4e75cf42d25bf689e/
+record_id = 'd4s9a4d6'  # find at dnspod api according to your record: https://support.dnspod.cn/api/5f562ae4e75cf42d25bf689e/
 sleep_time = 30  # the time interval to query local ip, seconds
 
 
